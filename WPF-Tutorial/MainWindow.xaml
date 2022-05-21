@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPF_Tutorial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Tutorial"
+        mc:Ignorable="d"
+        Title="SellSoul.com - Transaction Wizard" Height="350" Width="525">
+
+	<!--StackPanel >
+		
+	</StackPanel-->
+	
+	<!--DockPanel LastChildFill="False">
+		<Button DockPanel.Dock="Top">Oben 1</Button>
+		<Button DockPanel.Dock="Bottom">Unten 1</Button>
+		<Button DockPanel.Dock="Left">Links 1</Button>
+		<Button DockPanel.Dock="Right">Rechts 1</Button>
+		<Button DockPanel.Dock="Top">Oben 2</Button>
+		<Button DockPanel.Dock="Bottom">Unten 2</Button>
+		<Button DockPanel.Dock="Right">Rechts 2</Button>
+		<Button DockPanel.Dock="Left" >Links 2</Button>
+	</-->
+
+	<!--Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="40"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+
+		<Button Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">Klick mich</Button>
+		<Button Grid.Row="2" Grid.Column="0">Hallo Welt</Button>
+	</-->
+
+	<!--StackPanel>
+		<Button HorizontalAlignment="Left">Klick Mich!</Button>
+		<Button HorizontalAlignment="Center">Klick Mich!</Button>
+		<Button HorizontalAlignment="Right">Klick Mich!</Button>
+	</StackPanel-->
+
+	<StackPanel Margin="20">
+		<Label x:Name="firstNameLabel" FontSize="14" FontStyle="Italic">Vorname</Label>
+		<TextBox x:Name="firstNameBox" Padding="5" FontSize="16"></TextBox>
+		<Label x:Name="lastNameLabel" FontSize="14" FontStyle="Italic">Nachname</Label>
+		<TextBox x:Name="lastNameBox" Padding="5" FontSize="16"></TextBox>
+		<Button x:Name="submitButton" Click="SubmitForm" HorizontalAlignment="Center" Padding="10" Margin="0 20 0 0" FontWeight="SemiBold" FontSize="18">Deine Seele Manu verkaufen</Button>
+		<Label x:Name="successMessage" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold"></Label>
+		<Button x:Name="exitButton" Click="ExitProgram" HorizontalAlignment="Center" Padding="8"  Visibility="Hidden" FontStyle="Italic" FontSize="16">Programm schließen</Button>
+	</StackPanel>
+</Window>
